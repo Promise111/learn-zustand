@@ -1,5 +1,5 @@
 export interface TodoStore {
-  todos: string[] | [];
+  todos: string[];
   editing: null | number;
   typingTodoValue: string;
   isEditing: (index: number | null) => void;

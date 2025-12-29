@@ -12,7 +12,7 @@ const Todo = ({ todo, index }: TodoType) => {
 
   return (
     <li className={style["todo-item"]}>
-      {editing === null && (
+      {editing !== index && (
         <>
           <p>{todo}</p>
           <span>
@@ -25,7 +25,7 @@ const Todo = ({ todo, index }: TodoType) => {
           </span>
         </>
       )}
-      {typeof editing === "number" && (
+      {editing === index && (
         <>
           <input
             id={style["editTodo"]}
