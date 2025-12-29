@@ -2,14 +2,11 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { TodoStore } from "../utils/types";
 
-const existingTodo = localStorage.getItem("todos");
-const parsedExistingTodo = existingTodo ? JSON.parse(existingTodo) : [];
-
 const useTodoStore = create<TodoStore>()(
   persist(
     (set) => {
       return {
-        todos: parsedExistingTodo,
+        todos: [],
         typingTodoValue: "",
         editing: null,
         setTypingTodoValue: (todo: string) => {
