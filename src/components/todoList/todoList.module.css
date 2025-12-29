@@ -1,0 +1,51 @@
+.todo-list-wrapper {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .todo-list {
+    gap: 1vh;
+    width: 40%;
+    height: auto;
+    background-color: white;
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 12px;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > ol {
+      width: 100%;
+      color: #000;
+      padding: 0;
+    }
+    > button {
+      outline: none;
+      background-color: whitesmoke;
+    }
+    #todo {
+      border: 1px solid rgb(204, 202, 202);
+      outline: none;
+      border-radius: 12px;
+      width: 80%;
+      padding: 1vh 1vw;
+    }
+    > button {
+      height: 5vh;
+      width: 100px;
+      font-size: 12px;
+      padding: 2px;
+    }
+    > h1 {
+      color: #000;
+      font-size: 20px;
+    }
+    > .no-todos {
+      color: #000;
+      font-size: 12px;
+    }
+  }
+}
