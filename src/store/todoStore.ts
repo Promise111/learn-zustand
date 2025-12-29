@@ -30,7 +30,7 @@ const useTodoStore = create<TodoStore>()(
           return set((state) => {
             return {
               todos: state.todos.slice().map((item, i) => {
-                if (i == index) {
+                if (i === index) {
                   return newTodo;
                 }
                 return item;
